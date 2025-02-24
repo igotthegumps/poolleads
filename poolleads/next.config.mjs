@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
-        appDir: true,
+        appDir: true,  // Enables App Router
     },
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/app/page',
-                permanent: true,
-            },
-        ];
+    reactStrictMode: true,  // Ensures best React practices
+    images: {
+        domains: [],  // Add external image domains if needed
     },
 };
 
