@@ -1,14 +1,15 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
         appDir: true, // Enables App Router
     },
-    reactStrictMode: true, // Enforce best practices
+    reactStrictMode: true, // Enforces best React practices
     images: {
         domains: [], // Add external image domains if needed
     },
     eslint: {
-        ignoreDuringBuilds: true, // Prevent ESLint errors from stopping builds
+        ignoreDuringBuilds: true, // Prevents ESLint errors from blocking builds
     },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
